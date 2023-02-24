@@ -2,13 +2,16 @@ package br.com.alura;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Curso {
 
 	private String name;
 	private String instrutor;
 	private List<Aula> aulas = new ArrayList<Aula>();
+	private Set<Aluno> alunos = new HashSet<>();
 	
 	
 	public Curso(String name, String instrutor) {
@@ -44,6 +47,14 @@ public class Curso {
 	public String toString() {
 		return "[Curso: " + getName() + ", tempo total: " + this.getTempoTotal() + ","
 				+ "aulas: " + this.aulas + "]";
+	}
+
+	public void matricular(Aluno aluno) {
+		this.alunos.add(aluno);
+	}
+	
+	public Set<Aluno> getAlunos() {
+		return Collections.unmodifiableSet(alunos);
 	}
 	
 }
