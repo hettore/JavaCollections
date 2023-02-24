@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+/Volumes/Hd/Javaworkspace/JavaCollections - Alura One/.metadata/.plugins/org.eclipse.jdt.core
-1187294253.index
-1865797976.index
-468900082.index
